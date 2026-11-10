@@ -167,128 +167,155 @@
 - [x] **Usar o mesmo nome para componentes com a mesma função** em todas as páginas. (AA)   
   Resultado: Sim, todos os botões têm os mesmos nomes, um exemplo na imagem abaixo   
   ![][image18]![][image19]  
-- [ ] **Não mudar o contexto ao receber foco ou hover.** (A) 
+- [x] Não mudar o contexto ao receber foco ou hover. (A)
 
-**Resultado:** Não foi possível verificar se o foco por Tab ou a passagem do mouse alteram o contexto. O teste exige navegar pelos menus e controles e observar mudanças de página ou abertura inesperada de janelas. Situação: pendente de teste manual.
+**Resultado:** Sim. Ao navegar com Tab e passar o mouse pelos menus da página inicial, o foco ficou visível e os submenus apareceram sem mudar de página. O teste foi feito apenas nessas interações.
 
-- [ ] **Não mudar o contexto ao alterar um campo ou select** sem aviso prévio. (A) 
+- [x] Não mudar o contexto ao alterar um campo ou select sem aviso prévio. (A)
 
-**Resultado:** Não foi possível verificar o comportamento de campos do tipo select após a alteração de valores. É necessário testar formulários como os filtros de busca e observar se o contexto muda sem aviso. Situação: pendente de teste manual.
+**Resultado:** Sim. No campo testado, mudar a opção não redirecionou a página nem alterou o contexto sem aviso. Os outros campos não foram avaliados.
 
-- [ ] **Disparar ações ao soltar o ponteiro**, com possibilidade de cancelar. (A) 
+- [x] Disparar ações ao soltar o ponteiro, com possibilidade de cancelar. (A)
 
-**Resultado:** Não foi possível confirmar se as ações ocorrem ao soltar o botão do mouse ou o toque. Para avaliar o cancelamento, é necessário pressionar o controle, arrastar o ponteiro para fora e soltar. Situação: pendente de teste manual.
+**Resultado:** Sim. Ao pressionar um controle, arrastar o mouse para fora e soltar, a ação foi cancelada. O comportamento foi confirmado nesse controle.
 
-- [ ] **Oferecer alternativa de toque simples a gestos** com vários dedos ou de traçado. (A) 
+- [ ] Oferecer alternativa de toque simples a gestos com vários dedos ou de traçado. (A)
 
-**Resultado:** Não foi identificada, nas páginas consultadas, uma função que exija gesto com vários dedos ou traçado. A ausência de exemplos na inspeção não comprova atendimento em todo o portal. Situação: aplicabilidade a confirmar em dispositivo móvel.
+**Resultado:** Nos testes pelo celular, foi possível usar as funções com toques simples, sem gestos com vários dedos. Não encontramos uma função que exigisse gestos mais complexos nas páginas avaliadas.
 
-- [ ] **Oferecer alternativa sem arrastar** a toda ação de arrastar (slider, reordenar, mapa). (AA) 
+- [ ] Oferecer alternativa sem arrastar a toda ação de arrastar (slider, reordenar, mapa). (AA)
 
-**Resultado:** Não foi encontrada uma interação de arrastar suficientemente documentada para avaliação. Caso existam mapas, sliders ou reordenação, é preciso testar alternativa por clique ou teclado. Situação: aplicabilidade e funcionamento pendentes.
+**Resultado:** Não encontramos ações que exigissem arrastar objetos. Na agenda de Agropecuária, por exemplo, foi possível rolar os eventos com a rodinha do mouse. Isso não confirma o comportamento de outras funções de arrastar.
 
-- [ ] **Oferecer alternativa a funções por movimento do aparelho** e permitir desativá-las. (A) 
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-1.png)
 
-**Resultado:** Não foi identificada nas páginas consultadas função acionada ao inclinar ou sacudir o aparelho. É necessário testar a versão móvel antes de declarar o item não aplicável. Situação: pendente de verificação.
+- [ ] Oferecer alternativa a funções por movimento do aparelho e permitir desativá-las. (A)
 
-- [ ] **Dar retorno perceptível quando um controle é acionado.** (AA, Recomendação)   
-  **Resultado:** Parcial. O formulário 'Comunicar erro ou fazer sugestão' apresenta os botões Enviar, Cancelar e Fechar, além do texto de confirmação 'Sua mensagem foi enviada'. Esses estados aparecem no conteúdo do portal; falta confirmar o retorno após um acionamento real.
+**Resultado:** Nas páginas testadas pelo celular, nenhuma função exigiu inclinar ou sacudir o aparelho. Por isso, não foi possível avaliar uma alternativa para esse tipo de interação.
 
-**Formulários** 
+- [x] Dar retorno perceptível quando um controle é acionado. (AA, Recomendação)
 
-- [ ] **Adicionar rótulo visível a todo campo** (placeholder não substitui rótulo). (A) 
+**Resultado:** Sim. Ao abrir e fechar o menu principal, a página mostrou claramente a mudança. Não testamos a confirmação de envio do formulário de reclamação porque ela exige login no Gov.br.
 
-**Resultado:** Parcial. Os formulários 'Comunicar erro' e 'Autenticação de margem' mostram rótulos como 'Seu e-mail', 'CPF', 'Número da Reserva' e 'Data da Geração'. A amostra demonstra identificação textual, mas não comprova todos os campos do portal.
+**Formulários**
 
-- [ ] **Associar o label ao campo** (for \+ id). (A) 
+- [x] Adicionar rótulo visível a todo campo (placeholder não substitui rótulo). (A)
 
-**Resultado:** Não foi possível confirmar a associação programática de cada rótulo ao respectivo input. É preciso inspecionar for/id ou o nome acessível dos campos no DevTools, além de realizar teste com leitor de tela.
+**Resultado:** Sim. No formulário Autenticação de Margem, os campos CPF, Número da Reserva e Data da Geração têm rótulos visíveis, mesmo quando selecionados. A análise ficou restrita a esse formulário.
 
-- [ ] **Escrever rótulos e textos de ajuda descritivos**, em posição previsível. (AA) 
+- [x] Associar o label ao campo (for + id). (A)
 
-**Resultado:** Parcial. Em 'Autenticação de margem', aparecem as instruções 'Informe apenas os números' e 'Formato: dd/mm/aaaa'; em 'Comunicar erro', há o limite de 500 caracteres. A descrição é útil na amostra, sem garantir padronização em todos os formulários.
+**Resultado:** Sim. Pelo DevTools, verificamos que o rótulo do CPF usa `<label for="txtCpf">` e está associado ao campo `<input id="txtCpf">`. Não conferimos essa ligação nos demais campos.
 
-- [ ] **Agrupar campos relacionados com fieldset e legend.** (A) 
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-2.png)
 
-**Resultado:** Não foi possível verificar se grupos de campos utilizam fieldset e legend. A seção 'Identificação do Servidor' e a área 'Informações da Reserva' possuem títulos visuais, mas o título não comprova agrupamento semântico no HTML.
+- [x] Escrever rótulos e textos de ajuda descritivos, em posição previsível. (AA)
 
-- [ ] **Indicar campos obrigatórios em texto** ou símbolo explicado, não só por cor. (A) 
+**Resultado:** Sim. Na página Autenticação de Margem, as orientações aparecem junto dos campos: o CPF pede apenas números, a reserva pede seu número de identificação e a data informa o formato dd/mm/aaaa.
 
-**Resultado:** Parcial. A página 'Autenticação de margem' informa por texto: 'todos os campos são de preenchimento obrigatório', sem depender só de cor. Falta avaliar os demais formulários e confirmar a identificação dos campos individualmente.
+- [ ] Agrupar campos relacionados com fieldset e legend. (A)
 
-- [ ] **Adicionar autocomplete e tipo correto** em campos de dados pessoais. (AA) 
+**Resultado:** Não. No formulário Autenticação de Margem, não encontramos a tag fieldset pelo DevTools. Existem divisões visuais, como “Identificação do Servidor”, mas não o agrupamento semântico com fieldset e legend.
 
-**Resultado:** Não verificado. Os campos de e-mail e CPF foram localizados, porém a leitura da página não revela os atributos HTML autocomplete, type e inputmode. A confirmação exige inspeção do código dos campos.
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-3.png)
 
-- [ ] **Exibir mensagem de erro em texto** que diz qual é o erro e o campo, perto dele e anunciada pelo leitor de tela. (A) 
+- [x] Indicar campos obrigatórios em texto ou símbolo explicado, não só por cor. (A)
 
-**Resultado:** Parcial. Em 'Autenticação de margem', há a mensagem textual 'Erro: Atenção: todos os campos são de preenchimento obrigatório'. A evidência demonstra aviso escrito, mas não comprova que esteja junto ao campo com erro nem que seja anunciado por leitor de tela.
+**Resultado:** Sim. Antes dos campos da Autenticação de Margem, há o aviso “Atenção: todos os campos são de preenchimento obrigatório”. Assim, a informação não depende apenas de cor.
 
-- [ ] **Sugerir a correção na mensagem de erro** (ex.: "Use o formato DD/MM/AAAA"). (AA) 
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-4.png)
 
-**Resultado:** Parcial. A página 'Autenticação de margem' informa previamente o formato 'dd/mm/aaaa' e orienta a preencher CPF apenas com números. Não foi observado retorno de erro individualizado sugerindo a correção após uma submissão inválida.
+- [ ] Adicionar autocomplete e tipo correto em campos de dados pessoais. (AA)
 
-- [ ] **Permitir revisar, confirmar ou desfazer formulários críticos** (pagamento, dados jurídicos, exclusão). (AA) 
+**Resultado:** Parcial. O campo CPF usa type="text", `pattern="\d{11}"` e maxlength="11", mas não encontramos autocomplete nem inputmode. Isso não basta, por si só, para afirmar uma falha de autocomplete, já que não há um valor padronizado específico para CPF.
 
-**Resultado:** Não foi possível avaliar um formulário crítico com efeito jurídico, financeiro ou irreversível e seus mecanismos de revisão, confirmação ou desfazer. Esse requisito só pode ser decidido após escolher um fluxo aplicável e executá-lo.
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-5.png)
 
-- [ ] **Permitir revisar, confirmar ou desfazer todo formulário.** (AAA, Recomendação) 
+- [ ] Exibir mensagem de erro em texto que diz qual é o erro e o campo, perto dele e anunciada pelo leitor de tela. (A)
 
-**Resultado:** Não verificado. O formulário 'Comunicar erro' permite selecionar Enviar ou Cancelar e apresenta um estado de confirmação, mas não foi comprovada a possibilidade de revisar ou desfazer toda submissão. Requisito AAA, de recomendação.
+**Resultado:** Parcial. Ao tentar enviar o CPF em branco, apareceu a mensagem “Preencha este campo.” perto dele, e o foco foi levado até o campo. Não testamos se um leitor de tela anuncia o erro, nem a mensagem identifica o CPF pelo nome.
 
-- [ ] **Não pedir de novo dados já informados** no mesmo processo, ou trazê-los preenchidos. (A) 
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-6.png)
 
-**Resultado:** Não foi possível verificar repetição desnecessária de informações em um processo multietapas. A amostra examinada não documenta preenchimento sequencial com reuso de dados. Situação: pendente de teste funcional.
+- [ ] Sugerir a correção na mensagem de erro (ex.: "Use o formato DD/MM/AAAA"). (AA)
 
-- [ ] **Não exigir teste cognitivo no login:** permitir colar senha e usar gerenciador de senhas, ou oferecer alternativa. (AA) 
+**Resultado:** Parcial. Ao informar “123” no CPF, apareceu um aviso sobre o formato e a orientação para usar apenas números. Porém, a mensagem não explica que o CPF precisa ter 11 dígitos.
 
-**Resultado:** Não verificado. O portal disponibiliza acesso por 'Entrar', porém não foi executado login nem verificada a possibilidade de colar senha, usar gerenciador de senhas ou escolher alternativa sem desafio de memória.
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-7.png)
 
-- [ ] **Identificar o CAPTCHA e oferecer alternativa** em outra modalidade. (A) 
+- [ ] Permitir revisar, confirmar ou desfazer formulários críticos (pagamento, dados jurídicos, exclusão). (AA)
 
-**Resultado:** Não foi identificado CAPTCHA nas páginas públicas examinadas. Como isso não garante ausência em todos os formulários ou logins, é preciso localizar eventual CAPTCHA e testar sua alternativa acessível. Situação: aplicabilidade a confirmar.
+**Resultado:** Não foi possível avaliar. Nas páginas visitadas, não encontramos formulários de pagamento, exclusão ou outra operação crítica para testar etapas de revisão e confirmação.
 
-- [ ] **Oferecer ajuda contextual** (instruções e exemplos) para preencher. (AAA, Recomendação) 
+- [ ] Permitir revisar, confirmar ou desfazer todo formulário. (AAA, Recomendação)
 
-**Resultado:** Parcial. A página 'Autenticação de margem' fornece exemplos claros de preenchimento ('Informe apenas os números' e 'Formato: dd/mm/aaaa'), enquanto 'Comunicar erro' indica limite de caracteres. A avaliação de todos os fluxos permanece pendente.
+**Resultado:** Parcial. Na Autenticação de Margem, vimos os botões “Enviar” e “Limpar”, mas nenhuma revisão antes do envio. Como não concluímos um envio real, não sabemos se aparece uma confirmação depois.
 
-- [ ] **Incluir botão de envio explícito em todo formulário.** (A, Recomendação)   
-  **Resultado:** Parcial. Na área 'Comunicar erro ou fazer sugestão' existe o botão identificado 'Enviar'. Os formulários de autenticação também mencionam o envio; ainda é necessário confirmar a existência de botão equivalente em todos os formulários.
+- [ ] Não pedir de novo dados já informados no mesmo processo, ou trazê-los preenchidos. (A)
 
-**Tempo, movimento e modais** 
+**Resultado:** Não houve repetição de dados no formulário testado. A Autenticação de Margem tem uma única etapa, com CPF, Número da Reserva e Data da Geração. Não avaliamos processos mais longos.
 
-- [ ] **Permitir desligar, ajustar ou estender limites de tempo** antes de expirarem. (A) 
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-8.png)
 
-**Resultado:** Não verificado. Não foi identificado um fluxo com tempo limite documentado nas páginas consultadas. É necessário examinar sessões autenticadas ou formulários temporizados e verificar possibilidade de desligar, ajustar ou estender a contagem.
+- [x] Não exigir teste cognitivo no login: permitir colar senha e usar gerenciador de senhas, ou oferecer alternativa. (AA)
 
-- [ ] **Permitir pausar, parar ou ocultar animações automáticas** com mais de 5 s (carrossel, banner). (A) 
+**Resultado:** Sim, no teste realizado. O portal oferece entrada pelo Gov.br e um formulário de e-mail e senha para pessoa jurídica ou estrangeiro. Conseguimos colar uma senha fictícia nesse campo; o uso de gerenciadores de senha não foi testado.
 
-**Resultado:** Não verificado. A página inicial reúne cartões e notícias, mas a leitura estática não permite determinar se há movimento automático por mais de 5 segundos nem se ele pode ser pausado ou ocultado. Exige observação em navegador.
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-9.png)
 
-- [ ] **Permitir pausar ou controlar atualizações automáticas** de conteúdo. (A) 
+- [x] Identificar o CAPTCHA e oferecer alternativa em outra modalidade. (A)
 
-**Resultado:** Não verificado. A página inicial exibe agenda e conteúdos que podem mudar, mas não há evidência de atualização automática durante a navegação. É necessário observar a página aberta e testar eventuais controles de pausa.
+**Resultado:** Não apareceu CAPTCHA nas opções de login que analisamos. Portanto, não encontramos essa barreira, mas também não foi possível verificar se haveria outra forma de resolver um CAPTCHA caso ele surgisse.
 
-- [ ] **Permitir pausar ou silenciar áudio** que toca sozinho por mais de 3 s. (A) 
+- [x] Oferecer ajuda contextual (instruções e exemplos) para preencher. (AAA, Recomendação)
 
-**Resultado:** Não verificado. O portal incorpora conteúdo audiovisual em 'Sessões e reuniões', porém a inspeção textual não comprova reprodução automática de áudio nem funcionamento do controle de pausa. É necessário abrir os vídeos e observar.
+**Resultado:** Sim. Na Autenticação de Margem, os campos trazem dicas úteis, como usar apenas números no CPF e preencher a data no formato dd/mm/aaaa. A avaliação foi feita nesse formulário.
 
-- [ ] **Evitar conteúdo que pisca mais de 3 vezes por segundo.** (A) 
+- [x] Incluir botão de envio explícito em todo formulário. (A, Recomendação)
 
-**Resultado:** Não verificado por medição temporal. As páginas examinadas não permitiram medir a frequência de piscadas de animações ou banners; o critério exige observação da página em movimento, e não apenas leitura do conteúdo.
+**Resultado:** Sim. O formulário Autenticação de Margem tem um botão “Enviar” bem visível, separado do “Limpar”, além da orientação para clicar uma vez e aguardar. Não analisamos todos os formulários do site.
 
-- [ ] **Evitar perda de dados quando a sessão expira**, ou avisar antes. (AAA, Recomendação) 
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-10.png)
 
-**Resultado:** Não verificado. Para avaliar perda de dados por expiração, é preciso iniciar uma sessão ou formulário aplicável, aguardar o limite e observar avisos e recuperação das informações. A navegação pública não comprova o item.
+**Tempo, movimento e modais**
 
-- [ ] **Controlar o foco em modais:** entra no modal, fica nele enquanto aberto, fecha com Esc e com botão rotulado, volta ao gatilho. (Boa prática) 
+- [ ] Permitir desligar, ajustar ou estender limites de tempo antes de expirarem. (A)
 
-**Resultado:** Não verificado. A área 'Comunicar erro' apresenta os botões Enviar, Cancelar e Fechar, mas não foi testado se o foco entra na janela, permanece nela, fecha com Esc e retorna ao elemento de origem. Exige teste por teclado.
+**Resultado:** Não foi possível avaliar. No formulário Autenticação de Margem, não encontramos contador, prazo para preenchimento ou aviso de sessão prestes a expirar.
 
-- [ ] **Não abrir modais sozinhos**, nem a partir de outro modal, nem em tela cheia. (Boa prática)   
-  **Resultado:** Não verificado. A presença do formulário 'Comunicar erro' não permite afirmar que nenhuma janela seja aberta automaticamente ou em tela cheia ao longo do portal. É necessário testar a abertura da página e os principais percursos.
+- [ ] Permitir pausar, parar ou ocultar animações automáticas com mais de 5 s (carrossel, banner). (A)
 
-Itens cumpridos: \_\_\_\_ de 80\. 
+**Resultado:** Não foi possível avaliar. Durante a análise da página inicial, não vimos carrosséis ou banners se movendo automaticamente por mais de cinco segundos.
+
+- [ ] Permitir pausar ou controlar atualizações automáticas de conteúdo. (A)
+
+**Resultado:** Não foi possível avaliar. Notícias, agenda e a seção ACOMPANHE não apresentaram atualizações automáticas durante o teste. Esse recurso pode existir em outras páginas.
+
+- [ ] Permitir pausar ou silenciar áudio que toca sozinho por mais de 3 s. (A)
+
+**Resultado:** Não foi possível avaliar. Na seção ACOMPANHE, o vídeo do Plenário não começou a tocar sozinho; era preciso apertar o botão de reprodução. Assim, não houve áudio automático para testar.
+
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-11.png)
+
+- [x] Evitar conteúdo que pisca mais de 3 vezes por segundo. (A)
+
+**Resultado:** Sim, nas páginas observadas. Não vimos flashes ou elementos piscando rapidamente, embora não tenha sido feita uma medição técnica da frequência das piscadas.
+
+- [ ] Evitar perda de dados quando a sessão expira, ou avisar antes. (AAA, Recomendação)
+
+**Resultado:** Não verificado. Não acompanhamos uma sessão com login até expirar, então não foi possível saber se o site avisa antes ou preserva os dados preenchidos.
+
+- [ ] Controlar o foco em modais: entra no modal, fica nele enquanto aberto, fecha com Esc e com botão rotulado, volta ao gatilho. (Boa prática)
+
+**Resultado:** Parcial. No teste com teclado, o menu abriu, fechou com Esc e devolveu o foco ao item anterior. Porém, como o elemento testado era um menu suspenso e não um modal, não dá para confirmar os requisitos específicos de janelas modais.
+
+![Evidência do teste de acessibilidade](../images/avaliacao-arthur-12.png)
+
+- [x] Não abrir modais sozinhos, nem a partir de outro modal, nem em tela cheia. (Boa prática)
+
+**Resultado:** Sim, nas interações observadas. As janelas analisadas só abriram após uma ação do usuário, sem abrir outra por cima ou ocupar a tela inteira. Não testamos todos os diálogos do portal.
+
+Itens cumpridos: 33 de 80.
 
 [image3]: <data:image/png;base64,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>
 
