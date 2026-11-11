@@ -1,0 +1,89 @@
+site_name: Guia de Acessibilidade e Pocket de IHC – Grupo 07
+site_description: Guia de acessibilidade, pocket de IHC, avaliação do Portal da Câmara dos Deputados e avaliação com usuário (IHC 2026.2, UnB).
+site_author: Grupo 07 – IHC 2026.2
+site_url: https://renanpr7.github.io/pocket_ihc/
+repo_url: https://github.com/renanpr7/pocket_ihc
+repo_name: pocket_ihc
+edit_uri: edit/main/docs/
+copyright: Grupo 07 – Interação Humano-Computador 2026.2 – FCTE/UnB
+
+nav:
+  - Início: index.md
+  - Guia de Acessibilidade:
+      - guia/index.md
+      - Checklist: guia/checklist.md
+  - Pocket de IHC:
+      - pocket/index.md
+      - UX e Design Centrado no Usuário: pocket/ux.md
+      - Ferramentas e Técnicas: pocket/ferramentas.md
+      - Do e Don't: pocket/do-dont.md
+      - Conscientização: pocket/conscientizacao.md
+  - Avaliação do Portal:
+      - avaliacao-site/index.md
+      - Desenvolvimento: avaliacao-site/desenvolvimento.md
+      - Design: avaliacao-site/design.md
+      - Geração de Conteúdo: avaliacao-site/geracao-conteudo.md
+      - Heurísticas de Nielsen: avaliacao-site/heuristicas.md
+      - Resumo: avaliacao-site/resumo.md
+  - Avaliação com Usuário:
+      - Roteiro do teste: avaliacao-usuario/roteiro.md
+      - Resultados: avaliacao-usuario/resultados.md
+  - Referências: referencias.md
+
+theme:
+  name: material
+  language: pt-BR
+  logo: images/unb-logo.png
+  favicon: images/unb-logo.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Mudar para o modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para o modo claro
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Link para esta seção
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: false
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

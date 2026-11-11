@@ -1,0 +1,50 @@
+/* Cores da UnB, com contraste de pelo menos 4,5:1 sobre o fundo */
+:root {
+  --md-primary-fg-color: #003366;
+  --md-primary-fg-color--light: #1a4d80;
+  --md-primary-fg-color--dark: #002244;
+  --md-accent-fg-color: #006633;
+  --md-accent-fg-color--transparent: rgba(0, 102, 51, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0b2a4a;
+  --md-accent-fg-color: #5fd39a;
+  --md-accent-fg-color--transparent: rgba(95, 211, 154, 0.1);
+  --md-typeset-a-color: #8ab4f8;
+}
+
+/* Links no meio do texto sublinhados: não dependem só da cor */
+.md-typeset p a,
+.md-typeset li a,
+.md-typeset td a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* Foco visível e com contraste nos dois temas */
+:focus-visible {
+  outline: 3px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* Capturas de tela separadas do fundo da página */
+.md-typeset img:not(.md-logo img) {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tabelas largas rolam dentro do próprio bloco, sem rolagem horizontal da página */
+.md-typeset__table {
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
