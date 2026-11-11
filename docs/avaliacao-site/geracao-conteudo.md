@@ -1,30 +1,30 @@
-## Geração de Conteúdo
+# Geração de Conteúdo
 
 A seção de Geração de Conteúdo reúne itens que verificam o que é publicado no site: textos, descrições de imagens, vídeos, áudios e arquivos. Ela parte do princípio de que mesmo que um site contenha código e design acessíveis, ainda pode excluir pessoas se o conteúdo não for pensado para todos. Divide-se em quatro blocos, cada um deles contendo itens que atendem principalmente pessoas surdas, cegas, com deficiência, neurodivergentes e com baixo letramento digital.
 
-### Texto e linguagem
+## Texto e linguagem
 
 - [x] Escrever títulos e rótulos que descrevem o tema ou o propósito. (AA)
 
-Resultado: Sim, utilizando a extensão de HeadingsMap do Google foi verificado que os títulos e rótulos descrevem os temas ou propósitos presentes no site de forma correta.![](../images/image13.png)
+Resultado: Sim, utilizando a extensão de HeadingsMap do Google foi verificado que os títulos e rótulos descrevem os temas ou propósitos presentes no site de forma correta.![Captura de tela usada como evidência do item: Escrever títulos e rótulos que descrevem o tema ou o propósito](../images/image13.png)
 
 Fonte: elaborado pelo autor (2026)
 
 - [ ] Usar linguagem simples, frases curtas (15 a 20 palavras) e ordem direta. (AAA, Recomendação)
 
-Resultado: Não cumpre, dentro da seção de propostas analisadas o texto não aplica uma linguagem simples.![](../images/image10.png)
+Resultado: Não cumpre, dentro da seção de propostas analisadas o texto não aplica uma linguagem simples.![Captura de tela usada como evidência do item: Usar linguagem simples, frases curtas (15 a 20 palavras) e ordem direta](../images/image10.png)
 
 Fonte: elaborado pelo autor (2026)
 
 - [x] Explicar jargões, termos técnicos e expressões idiomáticas. (AAA, Recomendação)
 
-Resultado: Sim, os termos técnicos dos textos encontrados dentro da página possuem uma explicação de apoio.![](../images/image5.png)
+Resultado: Sim, os termos técnicos dos textos encontrados dentro da página possuem uma explicação de apoio.![Captura de tela usada como evidência do item: Explicar jargões, termos técnicos e expressões idiomáticas](../images/image5.png)
 
 Fonte: elaborado pelo autor (2026)
 
 - [ ] Escrever siglas por extenso na primeira vez. (AAA, Recomendação)
 
-Resultado: Sim, as siglas são escritas de forma completa para compreensão do usuário.![](../images/image52.png)
+Resultado: Sim, as siglas são escritas de forma completa para compreensão do usuário.![Captura de tela usada como evidência do item: Escrever siglas por extenso na primeira vez](../images/image52.png)
 
 Fonte: elaborado pelo autor (2026)
 
@@ -40,7 +40,7 @@ Resultado: Sim, os links disponíveis possuem texto que deixa específico o dest
 
 Resultado: Sim, a página utiliza de forma correta o termo “pessoa com deficiência”, evitando termos antigos ou pejorativos.
 
-![](../images/image23.png)
+![Captura de tela usada como evidência do item: Usar o termo "pessoa com deficiência"](../images/image23.png)
 
 Fonte: elaborado pelo autor (2026)
 
@@ -52,17 +52,17 @@ Resultado: Sim, foram analisados textos de amostra, comprovando que têm pontua�
 
 Resultado: Sim, hashtags e emojis não foram encontrados dentro das páginas avaliadas.
 
-### Imagens (descrição)
+## Imagens (descrição)
 
 - [ ] Descrever no texto alternativo o tipo de imagem, o quê ou quem aparece, onde e a ação, no presente. (A)
 
-Resultado: Não cumpre, apesar de haver imagens com texto alternativo disponível, existem imagens que não possuem texto alternativo (alt=""). A ferramenta de apoio utilizada foi a Wave Evaluation Tool.![](../images/image38.png)
+Resultado: Não cumpre, apesar de haver imagens com texto alternativo disponível, existem imagens que não possuem texto alternativo (alt=""). A ferramenta de apoio utilizada foi a Wave Evaluation Tool.![Captura de tela usada como evidência do item: Descrever no texto alternativo o tipo de imagem, o quê ou quem aparece, onde e a ação, no presente](../images/image38.png)
 
 Fonte: elaborado pelo autor (2026)
 
 - [ ] Evitar no alt "a foto mostra", repetição do texto ao lado e juízo de valor. (Boa prática)
 
-Resultado: Não, as descrições do texto alternativo estão corretas, mas podemos encontrar um caso onde várias imagens têm o mesmo texto alternativo. A ferramenta de apoio utilizada foi a Wave Evaluation Tool.![](../images/image31.png)
+Resultado: Não, as descrições do texto alternativo estão corretas, mas podemos encontrar um caso onde várias imagens têm o mesmo texto alternativo. A ferramenta de apoio utilizada foi a Wave Evaluation Tool.![Captura de tela usada como evidência do item: Evitar no alt "a foto mostra", repetição do texto ao lado e juízo de valor](../images/image31.png)
 
 Fonte: elaborado pelo autor (2026)
 
@@ -72,15 +72,15 @@ Resultado: Não, as imagens possuem um alt curto, mas não têm descrição lon
 
 - [x] Publicar avisos, cartazes e banners como texto, não como imagem de texto. (AA)
 
-Resultado: Sim, os avisos, cartazes e banner disponíveis estão em formato de texto.![](../images/image41.png)
+Resultado: Sim, os avisos, cartazes e banner disponíveis estão em formato de texto.![Captura de tela usada como evidência do item: Publicar avisos, cartazes e banners como texto, não como imagem de texto](../images/image41.png)
 
 Fonte: elaborado pelo autor (2026)
 
-### Vídeo e áudio
+## Vídeo e áudio
 
 - [x] Adicionar transcrição a áudio pré-gravado. (A)
 
-Resultado: Sim, os áudios pré-gravados na seção de Rádio Câmara dispõem de transcrição.![](../images/image39.png)
+Resultado: Sim, os áudios pré-gravados na seção de Rádio Câmara dispõem de transcrição.![Captura de tela usada como evidência do item: Adicionar transcrição a áudio pré-gravado](../images/image39.png)
 
 Fonte: elaborado pelo autor (2026)
 
@@ -88,7 +88,7 @@ Fonte: elaborado pelo autor (2026)
 
 Resultado: Não cumpre, os vídeos pré-gravados não apresentam função de legendas.
 
-![](../images/image30.png)
+![Captura de tela usada como evidência do item: Adicionar legendas descritivas a vídeo pré-gravado](../images/image30.png)
 
 Fonte: elaborado pelo autor (2026)
 
@@ -108,7 +108,7 @@ Resultado: Não cumpre, os vídeos não possuem uma transcrição completa, tant
 
 Resultado: Sim, a janela de Libras está implementada de forma correta dentro do site.
 
-![](../images/image47.png)
+![Captura de tela usada como evidência do item: Adicionar janela de Libras, à direita e com bom contraste](../images/image47.png)
 
 Fonte: elaborado pelo autor (2026)
 
@@ -126,29 +126,29 @@ Resultado: Sim, foi verificado que os áudios pré-gravados mantém um som de fu
 
 - [x] Acompanhar vídeos de um descritivo curto do conteúdo. (Boa prática)
 
-Resultado: Sim, os vídeos são acompanhados de uma descrição curta que explica o tema principal abordado.![](../images/image56.png)
+Resultado: Sim, os vídeos são acompanhados de uma descrição curta que explica o tema principal abordado.![Captura de tela usada como evidência do item: Acompanhar vídeos de um descritivo curto do conteúdo](../images/image56.png)
 
 Fonte: elaborado pelo autor (2026)
 
-### Arquivos e conteúdo de terceiros
+## Arquivos e conteúdo de terceiros
 
 - [x] Publicar arquivos acessíveis (PDF, DOCX com texto selecionável, títulos marcados, ordem de leitura correta). (Boa prática)
 
 Resultado: Sim, arquivos encontrados dentro da página contém texto selecionável, títulos marcados e conservam a ordem de leitura ao momento de aplicar a leitura por voz. Para a função de leitura por voz, foi utilizado o navegador Microsoft Edge.
 
-![](../images/image50.png)
+![Captura de tela usada como evidência do item: Publicar arquivos acessíveis (PDF, DOCX com texto selecionável, títulos marcados, ordem de leitura correta)](../images/image50.png)
 
 Fonte: elaborado pelo autor (2026)
 
 - [x] Escolher conteúdo de terceiros acessível (vídeos e posts incorporados) ou avisar o usuário das barreiras. (Boa prática)
 
-Resultado: Sim, dentro do site podemos encontrar conteúdo como vídeos de youtube, os quais disponibilizam legendas e serviço de Libras. Também incorpora no site acesso à transcrição e áudio do vídeo da sessão.![](../images/image43.png)
+Resultado: Sim, dentro do site podemos encontrar conteúdo como vídeos de youtube, os quais disponibilizam legendas e serviço de Libras. Também incorpora no site acesso à transcrição e áudio do vídeo da sessão.![Captura de tela usada como evidência do item: Escolher conteúdo de terceiros acessível (vídeos e posts incorporados) ou avisar o usuário das barreiras](../images/image43.png)
 
 Fonte: elaborado pelo autor (2026)
 
 - [x] Oferecer informações importantes em mais de um formato (texto + vídeo ou áudio). (Boa prática)
 
-Resultado: Sim, o site oferece acesso à transcrição ou áudio de uma determinada sessão em formato de vídeo.![](../images/image37.png)
+Resultado: Sim, o site oferece acesso à transcrição ou áudio de uma determinada sessão em formato de vídeo.![Captura de tela usada como evidência do item: Oferecer informações importantes em mais de um formato (texto + vídeo ou áudio)](../images/image37.png)
 
 Fonte: elaborado pelo autor (2026)
 

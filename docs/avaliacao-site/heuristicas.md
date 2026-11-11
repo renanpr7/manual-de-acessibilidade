@@ -1,4 +1,4 @@
-## Heurísticas de Nielsen
+# Heurísticas de Nielsen
 
 A seção de Heurísticas de Nielsen reúne as 10 heurísticas de usabilidade propostas por Jakob Nielsen e complementa o checklist de acessibilidade, avaliando principalmente se o site é fácil e agradável de usar. A análise é feita em conjunto pela equipe, a partir da execução de tarefas realistas no site, como acompanhar um projeto de lei ou encontrar o contato de um deputado. Isso permite relacionar os problemas de usabilidade encontrados às barreiras de acessibilidade identificadas nas outras seções.
 
@@ -6,15 +6,15 @@ A seção de Heurísticas de Nielsen reúne as 10 heurísticas de usabilidade pr
 
 Resultado: O site fornece informação útil para o usuário, mostrando a sua localização atual através das páginas no trilho de navegação, permitindo retornar para um ponto específico. Também foi verificado em uma página de formulário, que são apresentadas mensagens para o usuário em relação às ações realizadas.
 
-![](../images/image32.png)
+![Captura de tela usada como evidência do item: Heurística 1 (Visibilidade do status do sistema)](../images/image32.png)
 
-Fonte: elaborado pelo autor (2026)  ![](../images/image11.png)
+Fonte: elaborado pelo autor (2026)  ![Captura de tela usada como evidência do item: Heurística 1 (Visibilidade do status do sistema)](../images/image11.png)
 
 Fonte: elaborado pelo autor (2026)
 
 - [x] 2. Correspondência entre o sistema e o mundo real: usa a linguagem do público cidadão, ícones reconhecíveis e ordem natural das informações, evitando jargões legislativos ou códigos técnicos de sistema sem explicação (ex.: "Erro 500").
 
-Resultado: Sim, o sistema adota o uso de ícones relacionados a elementos da vida cotidiana do público geral, também utiliza linguagem natural e simples, além de fornecer explicação para palavras técnicas.![](../images/image46.png)
+Resultado: Sim, o sistema adota o uso de ícones relacionados a elementos da vida cotidiana do público geral, também utiliza linguagem natural e simples, além de fornecer explicação para palavras técnicas.![Captura de tela usada como evidência do item: Heurística 2 (Correspondência entre o sistema e o mundo real)](../images/image46.png)
 
 Fonte: elaborado pelo autor (2026)
 
@@ -22,7 +22,7 @@ Fonte: elaborado pelo autor (2026)
 
 Resultado: Sim, o sistema conta com saídas para voltar, cancelar, desfazer ações e fechar modais, mas é importante considerar que a tecla Esc não ativa nenhuma ação na página.
 
-![](../images/image9.png)
+![Captura de tela usada como evidência do item: Heurística 3 (Controle e liberdade do usuário)](../images/image9.png)
 
 Fonte: elaborado pelo autor (2026)
 
@@ -32,17 +32,17 @@ Resultado: Sim, ao observar o visual das páginas dentro do site, é possível v
 
 - [x] 5. Prevenção de erros: o formato esperado é indicado antes do preenchimento, os dados são validados com máscaras/restrições, ações destrutivas pedem confirmação e a interface previne tanto deslizes (cliques acidentais) quanto enganos (instruções confusas), sem apagar os dados já preenchidos caso ocorra erro em um campo.
 
-Resultado: Sim, para validar utilizamos como referência o formulário de “Avalie os serviços”, onde revisamos os campos a serem preenchidos enquanto verificamos que aparecem mensagens informativas de erro ou de sucesso, existem botões para enviar, refazer ou salvar para continuar depois e os campos obrigatórios são identificados por meio de asteriscos.![](../images/image34.png)
+Resultado: Sim, para validar utilizamos como referência o formulário de “Avalie os serviços”, onde revisamos os campos a serem preenchidos enquanto verificamos que aparecem mensagens informativas de erro ou de sucesso, existem botões para enviar, refazer ou salvar para continuar depois e os campos obrigatórios são identificados por meio de asteriscos.![Captura de tela usada como evidência do item: Heurística 5 (Prevenção de erros)](../images/image34.png)
 
 Fonte: elaborado pelo autor (2026)
 
 - [x] 6. Reconhecimento em vez de memorização: opções, regras de preenchimento e rótulos ficam permanentemente visíveis próximos aos campos (<label>, sugestões de busca) e o usuário não precisa lembrar informações entre telas.
 
-Resultado: Sim, foram avaliados os campos de busca da seção de deputados e de propostas legislativas onde verificamos que são mostradas corretamente as opções disponíveis, regras e rótulos facilitando o preenchimento para os usuários. Na seção de deputados, no campo de nome está disponível uma lista com os nomes dos deputados. Na seção de propostas legislativas, o usuário tem acesso aos tipos de proposição mais pesquisados (PEC, PLP, PL), entre outros.![](../images/image24.png)
+Resultado: Sim, foram avaliados os campos de busca da seção de deputados e de propostas legislativas onde verificamos que são mostradas corretamente as opções disponíveis, regras e rótulos facilitando o preenchimento para os usuários. Na seção de deputados, no campo de nome está disponível uma lista com os nomes dos deputados. Na seção de propostas legislativas, o usuário tem acesso aos tipos de proposição mais pesquisados (PEC, PLP, PL), entre outros.![Captura de tela usada como evidência do item: Heurística 6 (Reconhecimento em vez de memorização)](../images/image24.png)
 
 Fonte: elaborado pelo autor (2026)
 
-![](../images/image53.png)
+![Captura de tela usada como evidência do item: Heurística 6 (Reconhecimento em vez de memorização)](../images/image53.png)
 
 Fonte: elaborado pelo autor (2026)
 
@@ -50,7 +50,7 @@ Fonte: elaborado pelo autor (2026)
 
 Resultado: Sim, o site oferece diferentes formas de navegar pelo conteúdo e as páginas existentes, respondendo às necessidades de usuários iniciantes e experientes. É possível navegar através de atalhos do teclado especificados na seção de acessibilidade (ALT, SHIFT e combinação de teclas numéricas), além disso há presença tanto de busca rápida quanto de buscas avançadas com opções de filtros e seleção de dados. Um ponto a considerar é que a busca não oferece sugestões ao digitar.
 
-![](../images/image12.png)
+![Captura de tela usada como evidência do item: Heurística 7 (Flexibilidade e eficiência de uso)](../images/image12.png)
 
 Fonte: elaborado pelo autor (2026)
 
@@ -66,9 +66,9 @@ Resultado: Sim, o sistema fornece mensagens que permitem informar para o usuár
 
 Resultado: Sim, dentro do site podemos encontrar uma seção para perguntas frequentes e áreas clicáveis para acessar às redes sociais, número de telefone, atendimento presencial e online, na seção superior de uma página está presente o botão para acessar diretamente a página de acessibilidade. Apesar de não possuir acesso rápido, há presença de glossários relacionados a terminologias de acessibilidade e dicionário de Libras, também é disponibilizado um glossário específico para termos legislativos.
 
-![](../images/image36.png)![](../images/image55.png)
+![Captura de tela usada como evidência do item: Heurística 10 (Ajuda e documentação)](../images/image36.png)![Captura de tela usada como evidência do item: Heurística 10 (Ajuda e documentação)](../images/image55.png)
 
-Fonte: elaborado pelo autor (2026)                   Fonte: elaborado pelo autor (2026)![](../images/image28.png)![](../images/image44.png)
+Fonte: elaborado pelo autor (2026)                   Fonte: elaborado pelo autor (2026)![Captura de tela usada como evidência do item: Heurística 10 (Ajuda e documentação)](../images/image28.png)![Captura de tela usada como evidência do item: Heurística 10 (Ajuda e documentação)](../images/image44.png)
 
 Fonte: elaborado pelo autor (2026)                   Fonte: elaborado pelo autor (2026)
 
