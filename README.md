@@ -2,7 +2,7 @@
 
 Projeto final de Interação Humano-Computador (FCTE/UnB, 2026.2): guia de acessibilidade, pocket de IHC, avaliação do Portal da Câmara dos Deputados e avaliação com usuário.
 
-**Site:** https://renanpr7.github.io/pocket_ihc/
+**Site:** https://renanpr7.github.io/ihc-de-bolso/
 
 ## Rodar localmente
 

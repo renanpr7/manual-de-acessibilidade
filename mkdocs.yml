@@ -1,9 +1,9 @@
 site_name: Guia de Acessibilidade e Pocket de IHC – Grupo 07
 site_description: Guia de acessibilidade, pocket de IHC, avaliação do Portal da Câmara dos Deputados e avaliação com usuário (IHC 2026.2, UnB).
 site_author: Grupo 07 – IHC 2026.2
-site_url: https://renanpr7.github.io/pocket_ihc/
-repo_url: https://github.com/renanpr7/pocket_ihc
-repo_name: pocket_ihc
+site_url: https://renanpr7.github.io/ihc-de-bolso/
+repo_url: https://github.com/renanpr7/ihc-de-bolso
+repo_name: ihc-de-bolso
 edit_uri: edit/main/docs/
 copyright: Grupo 07 – Interação Humano-Computador 2026.2 – FCTE/UnB
 
