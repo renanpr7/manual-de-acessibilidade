@@ -27,20 +27,46 @@ Não se aplica. Os componentes são padrões conhecidos
     Sete itens desta seção constam do guia, mas não foram avaliados no portal. Eles aparecem como "Não avaliado" e entram na contagem como não cumpridos.
 
 - [x] **Dar a cada página um `<title>` único e descritivo.** (A)   
-Resultado: Sim, cada notícia ou aba sim um `<title>` único.  
-![Captura de tela usada como evidência do item: Dar a cada página um title único e descritivo](../images/dev-image3.png)  
+Resultado: Sim, cada notícia ou aba sim um `<title>` único.
+
+```html title="Título de duas páginas do portal"
+<!-- Página inicial (www.camara.leg.br) -->
+<title>Portal da Câmara dos Deputados</title>
+
+<!-- Página "Acompanhe por email" -->
+<title>Acompanhe por email - Portal da Câmara dos Deputados</title>
+```
+
+Fonte: código-fonte do portal (camara.leg.br), consultado em 11 nov. 2026.
 
 - [x] **Declarar o idioma da página** (lang="pt-BR"). (A)   
-Resultado: Sim, tem o idioma no código fonte do frontend  
-  
-![Captura de tela usada como evidência do item: Declarar o idioma da página (lang="pt-BR")](../images/dev-image4.png)  
+Resultado: Sim, tem o idioma no código fonte do frontend
+
+```html title="Início do código da página inicial"
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Portal da Câmara dos Deputados</title>
+```
+
+Fonte: código-fonte do portal (camara.leg.br), consultado em 11 nov. 2026.
 
 - [x] **Marcar com lang trechos em outro idioma.** (AA)   
-Resultado: O conteúdo não tem `lang="en"` ou `lang="es"`. Os links “English” e “Español” também não têm.  
-Versão Inglês:  
-![Captura de tela usada como evidência do item: Marcar com lang trechos em outro idioma](../images/dev-image5.png)  
-Versão Espanhol  
-![Captura de tela usada como evidência do item: Marcar com lang trechos em outro idioma](../images/dev-image6.png)  
+Resultado: O conteúdo não tem `lang="en"` ou `lang="es"`. Os links “English” e “Español” também não têm.
+
+```html title="Versões em inglês e em espanhol declaram o idioma português"
+<!-- Versão em inglês (www2.camara.leg.br/english) -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+<title>The Chamber of Deputies — Portal da Câmara dos Deputados</title>
+
+<!-- Versão em espanhol (www2.camara.leg.br/espanol) -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+<title>Cámara de los Diputados — Portal da Câmara dos Deputados</title>
+```
+
+Fonte: código-fonte do portal (camara.leg.br), consultado em 11 nov. 2026.
 
 - [x] **Usar h1 a h6 nos títulos**, não apenas fonte grande ou negrito. (A)   
 Resultado: Sim, os títulos usam marcação de cabeçalho (h1 "Página Inicial"; h2 "Serviços", "Notícias", "Agenda" etc.).  
@@ -52,13 +78,28 @@ Resultado: Sim, a sequência é h1, h2 e h3 (em "Notícias institucionais"), sem
 Resultado: Sim, há um único h1, "Página Inicial". Ele identifica a página, mas é genérico.
 
 - [x] **Usar regiões** (header, nav, main, footer) de acordo com o conteúdo. (A)   
-Resultado: Sim, usa tags semânticas  
-![Captura de tela usada como evidência do item: Usar regiões (header, nav, main, footer) de acordo com o conteúdo](../images/dev-image7.png)  
+Resultado: Sim, usa tags semânticas
+
+```html title="Regiões principais da página inicial"
+<header class="l-cabecalho-portal" role="banner">…</header>
+<nav class="menu-global navbar navbar-expand-lg" role="navigation" aria-label="Navegação principal" id="menuglobal">…</nav>
+<main role="main" id="main-content">…</main>
+<footer role="contentinfo" class="rodape-portal">…</footer>
+```
+
+Fonte: código-fonte do portal (camara.leg.br), consultado em 11 nov. 2026.
 
 - [x] **Dar nome acessível único a regiões do mesmo tipo** (ex.: dois nav com aria-label diferentes). (A)   
-Resultado: Sim, tudo tem o mesmo nome acessível na mesmo tipo, exemplo:  
-  
-![Captura de tela usada como evidência do item: Dar nome acessível único a regiões do mesmo tipo](../images/dev-image8.png)  
+Resultado: Sim, tudo tem o mesmo nome acessível na mesmo tipo, exemplo:
+
+```html title="Listas do cabeçalho com aria-label"
+<ul aria-label="Acesso direto" class="acesso-direto">…</ul>
+<ul aria-label="Ferramentas de apoio" class="links-apoio">…</ul>
+<ul class="orgaos-parceiros" aria-label="Órgãos parceiros">…</ul>
+<ul class="dropdown-menu dropdown-menu-right l-lista-idiomas" aria-label="Idioma">…</ul>
+```
+
+Fonte: código-fonte do portal (camara.leg.br), consultado em 11 nov. 2026.
 
 - [x] **Colocar todo o conteúdo em regiões**, com no máximo um header, um main e um footer. (AAA, Recomendação)   
 Resultado: Sim, tudo segue a sequência como esse exemplo:  
@@ -90,9 +131,34 @@ Resultado: Sim, tudo segue a sequência como esse exemplo:
 ```
 
 - [x] **Usar ul, ol ou dl para listas** de itens da mesma natureza. (A)   
-Resultado: Sim, menu, serviços, agenda, rodapé e redes sociais estão estruturados como listas.  
-  
-![Captura de tela usada como evidência do item: Usar ul, ol ou dl para listas de itens da mesma natureza](../images/dev-image9.png)  
+Resultado: Sim, menu, serviços, agenda, rodapé e redes sociais estão estruturados como listas.
+
+```html title="Lista de idiomas no cabeçalho"
+<div class="lista-idiomas">
+  <button class="botao-idioma-topo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="4,0">
+    <span class="botao-idioma-topo__sigla">PT</span>
+  </button>
+
+  <ul class="dropdown-menu dropdown-menu-right l-lista-idiomas" aria-label="Idioma">
+    <li class="l-lista-idiomas__item">
+      <a href="https://www2.camara.leg.br/english" class="idioma-topo">
+        <span class="idioma-topo__bandeira idioma-topo__bandeira--ingles" aria-hidden="true"></span>
+        <span class="idioma-topo__nome">English</span>
+        <span class="idioma-topo__sigla">EN</span>
+      </a>
+    </li>
+    <li class="l-lista-idiomas__item">
+      <a href="https://www2.camara.leg.br/espanol" class="idioma-topo">
+        <span class="idioma-topo__bandeira idioma-topo__bandeira--espanhol" aria-hidden="true"></span>
+        <span class="idioma-topo__nome">Español</span>
+        <span class="idioma-topo__sigla">ES</span>
+      </a>
+    </li>
+  </ul>
+</div>
+```
+
+Fonte: código-fonte do portal (camara.leg.br), consultado em 11 nov. 2026.
 
 - [ ] **Marcar tabelas de dados com table, th e scope** e não usar tabela para leiaute. (A)   
   
@@ -162,8 +228,20 @@ Resultado: Sim, toda imagem tem um alt, mas não são muitos descritivos e são 
 ## Links e navegação
 
 - [x] **Usar `<a href>` para navegar e `<button>` para ações.** (A)   
-Resultado: Sim, esse é o padrão em todo o site.  
-![Captura de tela usada como evidência do item: Usar a href para navegar e button para ações](../images/dev-image10.png)![Captura de tela usada como evidência do item: Usar a href para navegar e button para ações](../images/dev-image11.png)  
+Resultado: Sim, esse é o padrão em todo o site.
+
+```html title="Botão para ação e links para navegação no cabeçalho"
+<!-- Ação: abrir a lista de idiomas -->
+<button class="botao-idioma-topo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="4,0">
+  <span class="botao-idioma-topo__sigla">PT</span>
+</button>
+
+<!-- Navegação: levar a outro lugar -->
+<a class="acesso-direto__link" href="#main-content" accesskey="2">Ir ao conteúdo</a>
+<a href="https://www.camara.leg.br/login" class="btn nav-top__botao-entrar">Entrar</a>
+```
+
+Fonte: código-fonte do portal (camara.leg.br), consultado em 11 nov. 2026.
 
 - [ ] **Deixar claro o propósito do link** pelo texto ou pelo contexto (sem "clique aqui" isolado). (A)   
 - [ ] **Deixar claro o propósito do link só pelo texto do link.** (AAA, Recomendação)   
