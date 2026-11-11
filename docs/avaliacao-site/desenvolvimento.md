@@ -252,25 +252,26 @@ Resultado: Sim na página inicial como exemplo, pois links repetidos como "Agend
 - [ ] **Avisar quando o link abre nova aba, baixar arquivo (formato e tamanho) ou leva a site externo.** (AAA, Recomendação)   
 Resultado: Não há uma quantidade substancial para verificar pois não tem muitos links que levam a site externos. Porém os que foi encontrado, tinha avisando. Exemplo:
 
-![Captura de tela usada como evidência do item: Avisar quando o link abre nova aba, baixar arquivo (formato e tamanho) ou leva a site externo](../images/dev-image12.png)   
+![Captura de tela da página Recursos de Acessibilidade do portal, na seção Facilidades dos sistemas operacionais: quatro links para sites externos (Windows 11, OS X, Vinux e Brasillinux), seguidos da seção Fale conosco](../images/dev-image12.png)   
 
 - [x] **Oferecer mais de uma forma de chegar a cada página** (menu, busca, mapa do site). (AA)   
 Resultado: Sim, o portal oferece menu principal e campo de busca ("Pesquise no Portal").  
   
-![Captura de tela usada como evidência do item: Oferecer mais de uma forma de chegar a cada página (menu, busca, mapa do site)](../images/dev-image13.png)  
+![Captura de tela da página Siga por E-mail do portal, com o menu principal (Assuntos, Institucional, Deputados, Atividade Legislativa, Comunicação, Transparência e prestação de contas) e o campo Buscar no cabeçalho](../images/dev-image13.png)  
   
 - [x] **Manter a navegação repetida na mesma ordem** em todas as páginas. (AA)   
 Resultado: Sim, a navagação é sempre a mesma.  
-![Captura de tela usada como evidência do item: Manter a navegação repetida na mesma ordem em todas as páginas](../images/dev-image14.png)![Captura de tela usada como evidência do item: Manter a navegação repetida na mesma ordem em todas as páginas](../images/dev-image15.png)  
+![Captura de tela da página inicial do portal, com o menu principal e o campo Buscar no cabeçalho, seguidos dos atalhos de serviços e das notícias](../images/dev-image14.png)
+![Captura de tela da página Serviços ao Cidadão, com o mesmo cabeçalho e o mesmo menu principal, na mesma ordem, da página inicial](../images/dev-image15.png)  
 
 - [x] **Manter ajuda (contato, FAQ, chat) na mesma posição** em todas as páginas. (A)   
 Resultado: Sim na página inicial: "Fale Conosco" no cabeçalho e canais de atendimento (Disque-Câmara e WhatsApp) no rodapé. Confirmar nas páginas internas.  
-![Captura de tela usada como evidência do item: Manter ajuda (contato, FAQ, chat) na mesma posição em todas as páginas](../images/dev-image16.png)  
+![Captura de tela do cabeçalho do portal, com os links Acessibilidade e Fale Conosco no canto superior direito, acima do menu principal](../images/dev-image16.png)  
   
 - [x] **Indicar onde o usuário está** (breadcrumb, item de menu ativo). (AAA, Recomendação)   
 Resultado: Sim, toda página tem o indicativo de onde está  o usuário.  
   
-![Captura de tela usada como evidência do item: Indicar onde o usuário está (breadcrumb, item de menu ativo)](../images/dev-image17.png)
+![Captura de tela da página Plenário, com o trilho de navegação Início / Atividade Legislativa / Esta página logo abaixo do menu principal](../images/dev-image17.png)
 
 ## Botões e controles
 
@@ -279,7 +280,8 @@ Resultado: Sim, todos os botões têm nomes acessíveis
 
 - [x] **Usar o mesmo nome para componentes com a mesma função** em todas as páginas. (AA)   
 Resultado: Sim, todos os botões têm os mesmos nomes, um exemplo na imagem abaixo   
-![Captura de tela usada como evidência do item: Usar o mesmo nome para componentes com a mesma função em todas as páginas](../images/dev-image18.png)![Captura de tela usada como evidência do item: Usar o mesmo nome para componentes com a mesma função em todas as páginas](../images/dev-image19.png)  
+![Captura de tela da página inicial do portal: no cabeçalho, os links Acessibilidade e Fale Conosco, o botão Entrar e o campo Buscar](../images/dev-image14.png)
+![Captura de tela da página Serviços ao Cidadão: o cabeçalho repete os links Acessibilidade e Fale Conosco, o botão Entrar e o campo Buscar, com os mesmos nomes](../images/dev-image15.png)  
 
 - [x] Não mudar o contexto ao receber foco ou hover. (A)
 
